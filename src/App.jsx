@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.scss'
-import './components/Pass'
+import passGenerate from './components/Pass'
 
 const App = () => {
   const [result, setResult] = useState('')
@@ -17,8 +17,7 @@ const App = () => {
   return (
     <div className='container'>
       <h1 className='container__title'>Password Generator</h1>
-      <input className="" type="range" min={0} max={100} value={inputVal} onChange={handleChange}/>
-
+      <input className="container__inputRange" type="range" min={0} max={100} value={inputVal} onChange={handleChange}/><input className="container__inputNum" type="number" value={inputVal} />
     </div>
   )
 }
