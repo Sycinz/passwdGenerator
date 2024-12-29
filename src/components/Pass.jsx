@@ -29,6 +29,7 @@ const passGenerate = (length, numbers, symbols, result, setResult) => {
     password = password.split('').sort(() => 0.5 - Math.random()).join('');
 
     setResult(password);
+    return password;
 }
 
 export default passGenerate;
