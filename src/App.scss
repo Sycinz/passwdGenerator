@@ -1,3 +1,5 @@
+$dark_bg: #31303091;
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -60,21 +62,25 @@ body, html {
 
 .container {
     display: flex;
-    
-    padding: 10em 3.5em;
+    align-items: center;
 
-    background: #31303091;
+    // padding: 10em 3.5em;
 
     width: 600px;
 
-    &__inputRange {}
-
+    // &__inputRange {}
     &__inputNum {
-        width: 5%;
+        max-width: 8%;
         height: 35px;
+
+        text-align: center;
+
+        font-size: 1.1em;
 
         border: 2px solid white;
         border-radius: 0.5em;
+        margin: 0 .2em;
+        // padding: 0.7em;
 
         background: transparent;
         color: white;
@@ -84,17 +90,19 @@ body, html {
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
-    background: white;
+    background: $dark_bg;
     border-radius: 0.5em;
+    border: 2px solid white;
     cursor: pointer;
-    width: 15rem;
+    width: 85%;
     height: 1rem;
   }
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    background: black;
+    background: #313030;
+    border: 2px solid white;
     border-radius: 50%;
     cursor: pointer;
     height: 2.5rem;

@@ -24,7 +24,9 @@ const App = () => {
       <div className="result_container">
         <div className="result" onClick={ copyToClipboard } >{result}</div>
       </div>
+      
       <div className='container'>
+
         <input
           className="container__inputNum" type="text"
           value={inputVal} onChange={handleChange}
