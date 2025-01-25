@@ -3,4 +3,4 @@
 Website that generates random password, depending on user's set length.
 In the future there will be customization added (like choosing special characters, spaces, other aplhabetes and so on...) 
 
-![Zdjęcie strony](path/to/your/image.jpg)
+![Zdjęcie strony](public/passwdGenerator_screen.png)
